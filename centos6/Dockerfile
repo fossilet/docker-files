@@ -1,6 +1,6 @@
 FROM centos:centos6
 
-RUN yum install -y openssh-server
+RUN yum install -y openssh-server sudo
 
 # Generate sshd host keys, otherwise sshd won't start in CMD.
 RUN service sshd start
